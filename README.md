@@ -1,73 +1,63 @@
-# React + TypeScript + Vite
+# 3D Creator Portfolio 🎨
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A cutting-edge, highly interactive "3D Creator" themed portfolio website built to showcase 3D Modeling, Rendering, Motion Design, Branding, and Web Design services. 
 
-Currently, two official plugins are available:
+Designed with a sleek dark mode aesthetic (`#0C0C0C`), fluid typography (`Kanit`), and completely customized scroll-driven Framer Motion animations.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+![Live Demo](https://img.shields.io/badge/Live_Demo-Available-success?style=for-the-badge&logo=vercel)
 
-## React Compiler
+**Live Link:** [https://tanvirfolio-website.vercel.app/](https://tanvirfolio-website.vercel.app/)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Pixel-Perfect UI:** Meticulously replicated design with tailored gradients, drop shadows, and fluid scaling typography using CSS `clamp()`.
+- **Magnetic Interactions:** Custom physics-based `Magnet` wrapper applied to the Hero portrait for a high-end interactive feel.
+- **Scroll-Driven Animations:** 
+  - Staggered `FadeIn` components for section reveals.
+  - `AnimatedText` that reveals characters individually as the user scrolls.
+  - Sticky stacking `ProjectsSection` cards that scale down dynamically to create a parallax deck effect.
+- **Infinite Marquee:** A dual-row, opposing-direction scrolling gallery featuring 3D animated GIFs.
+- **Fully Responsive:** Seamlessly adapts to mobile, tablet, and desktop views.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🛠️ Technology Stack
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- **Framework:** React 19 + Vite
+- **Styling:** Tailwind CSS v4
+- **Animation:** Framer Motion
+- **Icons:** Lucide React
+- **Language:** TypeScript
+- **Deployment:** Vercel (Auto-deployed via GitHub)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 💻 Local Development
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/Siddik73/tanvirfolio-website.git
+   cd tanvirfolio-website
+   ```
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+3. **Run the development server:**
+   ```bash
+   npm run dev
+   ```
+
+4. **Build for production:**
+   ```bash
+   npm run build
+   ```
+
+## 📂 Project Structure
+
+- `src/components/`: Reusable Framer Motion micro-interactions (`Magnet`, `FadeIn`, `AnimatedText`, etc.)
+- `src/sections/`: The main building blocks of the page (`HeroSection`, `MarqueeSection`, `ProjectsSection`, etc.)
+- `public/assets/`: All locally hosted 3D graphics, GIFs, and WebP images optimized for fast loading.
+
+## 📄 License
+This project is proprietary.
