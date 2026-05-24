@@ -61,7 +61,7 @@ export const MarqueeSection = () => {
     return tripled.map((gif, idx) => (
       <img 
         key={`${gif}-${idx}`}
-        src={`/assets/${gif}`} 
+        src={`./assets/${gif}`} 
         alt="Portfolio work"
         loading="lazy"
         className="w-[420px] h-[270px] rounded-2xl object-cover shrink-0"

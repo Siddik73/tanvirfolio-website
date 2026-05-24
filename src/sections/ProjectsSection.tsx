@@ -9,9 +9,9 @@ const projects = [
     label: "Client",
     name: "Nextlevel Studio",
     images: {
-      left1: "/assets/p1-c1-i1.webp",
-      left2: "/assets/p1-c1-i2.webp",
-      right: "/assets/p1-c2-i1.webp"
+      left1: "./assets/p1-c1-i1.webp",
+      left2: "./assets/p1-c1-i2.webp",
+      right: "./assets/p1-c2-i1.webp"
     }
   },
   {
@@ -19,9 +19,9 @@ const projects = [
     label: "Personal",
     name: "Aura Brand Identity",
     images: {
-      left1: "/assets/p2-c1-i1.webp",
-      left2: "/assets/p2-c1-i2.webp",
-      right: "/assets/p2-c2-i1.webp"
+      left1: "./assets/p2-c1-i1.webp",
+      left2: "./assets/p2-c1-i2.webp",
+      right: "./assets/p2-c2-i1.webp"
     }
   },
   {
@@ -29,9 +29,9 @@ const projects = [
     label: "Client",
     name: "Solaris Digital",
     images: {
-      left1: "/assets/p3-c1-i1.webp",
-      left2: "/assets/p3-c1-i2.webp",
-      right: "/assets/p3-c2-i1.webp"
+      left1: "./assets/p3-c1-i1.webp",
+      left2: "./assets/p3-c1-i2.webp",
+      right: "./assets/p3-c2-i1.webp"
     }
   }
 ];

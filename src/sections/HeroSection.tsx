@@ -41,7 +41,7 @@ export const HeroSection = () => {
       <FadeIn delay={0.6} y={30} className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 sm:top-auto sm:translate-y-0 sm:bottom-0 z-10 pointer-events-none">
         <Magnet padding={150} strength={3} className="pointer-events-auto">
           <img 
-            src="/assets/hero-portrait.png" 
+            src="./assets/hero-portrait.png" 
             alt="Tanvir Portrait" 
             className="w-[280px] sm:w-[360px] md:w-[440px] lg:w-[520px] object-contain drop-shadow-2xl" 
           />
